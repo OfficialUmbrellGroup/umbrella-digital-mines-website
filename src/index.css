@@ -6,8 +6,8 @@
   --text-primary: #f8fafc; /* Slate 50 */
   --text-secondary: #94a3b8; /* Slate 400 */
   
-  --accent-green: #10b981; /* Emerald 500 */
-  --accent-green-glow: rgba(16, 185, 129, 0.2);
+  --accent-primary: #a855f7; /* Purple 500 */
+  --accent-primary-glow: rgba(168, 85, 247, 0.2);
   --accent-blue: #3b82f6; /* Blue 500 */
   
   --border-color: rgba(255, 255, 255, 0.1);
@@ -41,13 +41,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--accent-green);
+  color: var(--accent-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #34d399; /* Emerald 400 */
+  color: #c084fc; /* Purple 400 */
 }
 
 /* Glassmorphism utilities */
@@ -70,13 +70,13 @@ a:hover {
 
 .glass-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px var(--accent-green-glow);
-  border-color: var(--accent-green);
+  box-shadow: 0 10px 30px var(--accent-primary-glow);
+  border-color: var(--accent-primary);
 }
 
 /* Gradients */
 .text-gradient {
-  background: linear-gradient(to right, var(--accent-green), var(--accent-blue));
+  background: linear-gradient(to right, var(--accent-primary), var(--accent-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -88,7 +88,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1.5rem;
-  background-color: var(--accent-green);
+  background-color: var(--accent-primary);
   color: #020617;
   font-weight: 600;
   font-family: var(--font-heading);
@@ -99,8 +99,8 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #34d399;
-  box-shadow: 0 0 15px var(--accent-green-glow);
+  background-color: #c084fc;
+  box-shadow: 0 0 15px var(--accent-primary-glow);
   color: #020617;
 }
 
@@ -120,8 +120,8 @@ a:hover {
 }
 
 .btn-outline:hover {
-  border-color: var(--accent-green);
-  background-color: rgba(16, 185, 129, 0.1);
+  border-color: var(--accent-primary);
+  background-color: rgba(168, 85, 247, 0.1);
 }
 
 /* Layout Utilities */
